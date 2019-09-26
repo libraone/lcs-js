@@ -1,0 +1,30 @@
+{
+  "name": "lcs-js",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "buffer": "5.4.2",
+    "long": "4.0.0"
+  },
+  "devDependencies": {
+    "@types/chai": "4.2.1",
+    "@types/long": "4.0.0",
+    "@types/mocha": "5.2.7",
+    "@types/node": "8",
+    "chai": "4.2.0",
+    "jest": "24.9.0",
+    "mocha": "6.2.0",
+    "ts-loader": "6.0.4",
+    "typescript": "3.6.2",
+    "webpack": "4.39.3",
+    "webpack-cli": "3.3.7",
+    "webpack-node-externals": "1.7.2"
+  },
+  "scripts": {
+    "clean": "rm -rf ./dist",
+    "build::web": "yarn run webpack --env.platform=web",
+    "build::node": "yarn run webpack --env.platform=node",
+    "test": "yarn run mocha test/index.js"
+  }
+}

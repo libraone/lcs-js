@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es5",
+        "allowJs": false,
+        "strict": true,
+        "declaration": true,
+        "outDir": "dist",
+        "moduleResolution": "node",
+        "downlevelIteration": true,
+        "baseUrl": ".",
+        "paths": {
+            "platform/*": [
+                "src/platform/node/*"
+            ]
+        }
+    },
+    "include": [
+        "src"
+    ]
+}
